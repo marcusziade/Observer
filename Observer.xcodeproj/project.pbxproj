@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5A2966F32BB85B4700D1343C /* ObserverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2966F22BB85B4700D1343C /* ObserverApp.swift */; };
 		5A2966F52BB85B4700D1343C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2966F42BB85B4700D1343C /* ContentView.swift */; };
 		5A2966F72BB85B4800D1343C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2966F62BB85B4800D1343C /* Assets.xcassets */; };
+		5A2967092BB85D7E00D1343C /* StarCraftKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A2967082BB85D7E00D1343C /* StarCraftKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2967092BB85D7E00D1343C /* StarCraftKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +74,9 @@
 			dependencies = (
 			);
 			name = Observer;
+			packageProductDependencies = (
+				5A2967082BB85D7E00D1343C /* StarCraftKit */,
+			);
 			productName = Observer;
 			productReference = 5A2966EF2BB85B4700D1343C /* Observer.app */;
 			productType = "com.apple.product-type.application";
@@ -100,6 +105,9 @@
 				Base,
 			);
 			mainGroup = 5A2966E62BB85B4700D1343C;
+			packageReferences = (
+				5A2967072BB85D7E00D1343C /* XCLocalSwiftPackageReference "../../swift/libraries/StarCraftKit" */,
+			);
 			productRefGroup = 5A2966F02BB85B4700D1343C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,6 +338,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5A2967072BB85D7E00D1343C /* XCLocalSwiftPackageReference "../../swift/libraries/StarCraftKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../swift/libraries/StarCraftKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A2967082BB85D7E00D1343C /* StarCraftKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StarCraftKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A2966E72BB85B4700D1343C /* Project object */;
 }
